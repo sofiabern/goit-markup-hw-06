@@ -877,10 +877,24 @@ img {
 .modal-form-agreement {
   display: flex;
   justify-content: center;
+
   gap: 8px;
 }
 
-.form-check-input {
+.unchecked {
+  opacity: 1;
+}
+
+.checked {
+  opacity: 0;
+}
+
+.form-check-input:checked + .form-custom-check > .unchecked {
+  opacity: 0;
+}
+
+.form-check-input:checked + .form-custom-check > .checked {
+  opacity: 1;
 }
 
 .form-agreement-text {
@@ -890,6 +904,8 @@ img {
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
+
+  user-select: none;
 }
 
 .form-agreement-link {
