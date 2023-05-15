@@ -508,7 +508,64 @@ img {
 
 .form-container {
   display: flex;
+  align-items: center;
   gap: 24px;
+}
+
+.footer-input-email {
+  padding-left: 16px;
+
+  width: 264px;
+  height: 40px;
+
+  color: #ffffff;
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+}
+
+.footer-input-email:focus {
+  outline: transparent;
+}
+
+.footer-input-email::placeholder {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2;
+
+  color: #ffffff;
+}
+
+.footer-form-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+
+  min-width: 165px;
+  height: 40px;
+
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+
+  color: #ffffff;
+  background: #4d5ae5;
+  border: none;
+  border-radius: 4px;
+
+  transition: background-color var(--duration) var(--timing-fucntion);
+}
+
+.footer-form-btn:hover,
+.footer-form-btn:focus,
+.footer-form-btn:active {
+  background-color: var(--ocean-accent-color);
 }
 
 /* Portfolio-page */
