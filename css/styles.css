@@ -463,10 +463,11 @@ img {
 .footer-text {
   width: 264px;
 
-  color: var(--footer-text);
+  color: var(--light-text);
 }
 
-.footer-social-text {
+.footer-social-text,
+.footer-form-text {
   color: var(--tertiary-text-color);
   font-weight: 500;
   font-size: 16px;
@@ -499,6 +500,15 @@ img {
 
 .footer-social-icon {
   fill: var(--icon-color);
+}
+
+.footer-form {
+  margin-left: auto;
+}
+
+.form-container {
+  display: flex;
+  gap: 24px;
 }
 
 /* Portfolio-page */
