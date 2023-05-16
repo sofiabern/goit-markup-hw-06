@@ -823,14 +823,14 @@ img {
   width: 100%;
   height: 40px;
 
-  outline-offset: -1px;
+  outline: transparent;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
-  transition: outline-color var(--duration) var(--timing-fucntion);
+  transition: border-color var(--duration) var(--timing-fucntion);
 }
 
 .modal-form-field:focus {
-  outline-color: #4d5ae5;
+  border-color: #4d5ae5;
 }
 
 .modal-form-icon {
@@ -864,10 +864,10 @@ img {
   line-height: 1.17;
   letter-spacing: 0.04em;
 
-  outline-offset: -1px;
+  outline: transparent;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
-  transition: outline-color var(--duration) var(--timing-fucntion);
+  transition: border-color var(--duration) var(--timing-fucntion);
 }
 
 .modal-form-comment::placeholder {
@@ -875,14 +875,14 @@ img {
 }
 
 .modal-form-comment:focus {
-  outline-color: #4d5ae5;
+  border-color: #4d5ae5;
 }
 
 .modal-form-agreement {
   display: flex;
   justify-content: center;
-
   gap: 8px;
+  margin-bottom: 24px;
 }
 
 .unchecked {
@@ -902,8 +902,6 @@ img {
 }
 
 .form-agreement-text {
-  margin-bottom: 24px;
-
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
